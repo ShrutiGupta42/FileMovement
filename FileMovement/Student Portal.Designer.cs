@@ -56,7 +56,7 @@
             this.lblStudent.AutoSize = true;
             this.lblStudent.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudent.ForeColor = System.Drawing.Color.Olive;
-            this.lblStudent.Location = new System.Drawing.Point(204, 42);
+            this.lblStudent.Location = new System.Drawing.Point(390, 33);
             this.lblStudent.Name = "lblStudent";
             this.lblStudent.Size = new System.Drawing.Size(85, 31);
             this.lblStudent.TabIndex = 0;
