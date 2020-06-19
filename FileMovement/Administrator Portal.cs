@@ -24,7 +24,7 @@ namespace FileMovement
             lblAdmin.Text = "Welcome : " + Admin_class.username;
         }
 
-        private void btnUserManagement_Click(object sender, EventArgs e)
+        private void btnAdminManageUserInfo_Click(object sender, EventArgs e)
         {
             this.Hide();
             All_Users_Details users = new All_Users_Details();

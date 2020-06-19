@@ -33,6 +33,8 @@
             this.userSignUpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userSignUpTableAdapter = new FileMovement.signUpDataSet1TableAdapters.UserSignUpTableAdapter();
             this.lblStudent = new System.Windows.Forms.Label();
+            this.btnStudentViewFileStatus = new System.Windows.Forms.Button();
+            this.btnStudentFileRegis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.signUpDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userSignUpBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -56,17 +58,39 @@
             this.lblStudent.AutoSize = true;
             this.lblStudent.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStudent.ForeColor = System.Drawing.Color.Olive;
-            this.lblStudent.Location = new System.Drawing.Point(390, 33);
+            this.lblStudent.Location = new System.Drawing.Point(365, 26);
             this.lblStudent.Name = "lblStudent";
             this.lblStudent.Size = new System.Drawing.Size(85, 31);
             this.lblStudent.TabIndex = 0;
             this.lblStudent.Text = "label1";
             // 
+            // btnStudentViewFileStatus
+            // 
+            this.btnStudentViewFileStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentViewFileStatus.Location = new System.Drawing.Point(200, 237);
+            this.btnStudentViewFileStatus.Name = "btnStudentViewFileStatus";
+            this.btnStudentViewFileStatus.Size = new System.Drawing.Size(250, 33);
+            this.btnStudentViewFileStatus.TabIndex = 43;
+            this.btnStudentViewFileStatus.Text = "View File Status";
+            this.btnStudentViewFileStatus.UseVisualStyleBackColor = true;
+            // 
+            // btnStudentFileRegis
+            // 
+            this.btnStudentFileRegis.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentFileRegis.Location = new System.Drawing.Point(200, 178);
+            this.btnStudentFileRegis.Name = "btnStudentFileRegis";
+            this.btnStudentFileRegis.Size = new System.Drawing.Size(250, 33);
+            this.btnStudentFileRegis.TabIndex = 42;
+            this.btnStudentFileRegis.Text = "File Registration";
+            this.btnStudentFileRegis.UseVisualStyleBackColor = true;
+            // 
             // Student_Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 304);
+            this.ClientSize = new System.Drawing.Size(648, 395);
+            this.Controls.Add(this.btnStudentViewFileStatus);
+            this.Controls.Add(this.btnStudentFileRegis);
             this.Controls.Add(this.lblStudent);
             this.Name = "Student_Portal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -84,5 +108,7 @@
         private System.Windows.Forms.BindingSource userSignUpBindingSource;
         private signUpDataSet1TableAdapters.UserSignUpTableAdapter userSignUpTableAdapter;
         private System.Windows.Forms.Label lblStudent;
+        private System.Windows.Forms.Button btnStudentViewFileStatus;
+        private System.Windows.Forms.Button btnStudentFileRegis;
     }
 }
