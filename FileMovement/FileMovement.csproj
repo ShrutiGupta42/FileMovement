@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A113250E-9674-4CDD-B8FB-A214F3190752}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FileMovement</RootNamespace>
+    <AssemblyName>FileMovement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin class.cs" />
+    <Compile Include="Administrator Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator Portal.Designer.cs">
+      <DependentUpon>Administrator Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All Users Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All Users Details.Designer.cs">
+      <DependentUpon>All Users Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="Department Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department Login.Designer.cs">
+      <DependentUpon>Department Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department Portal.Designer.cs">
+      <DependentUpon>Department Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept class.cs" />
+    <Compile Include="fileMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fileMovement.Designer.cs">
+      <DependentUpon>fileMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign up.Designer.cs">
+      <DependentUpon>Sign up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signUpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="signUpDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>signUpDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student class.cs" />
+    <Compile Include="Student Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Login.Designer.cs">
+      <DependentUpon>Student Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Portal.Designer.cs">
+      <DependentUpon>Student Portal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Administrator Portal.resx">
+      <DependentUpon>Administrator Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Users Details.resx">
+      <DependentUpon>All Users Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department Login.resx">
+      <DependentUpon>Department Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department Portal.resx">
+      <DependentUpon>Department Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fileMovement.resx">
+      <DependentUpon>fileMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sign up.resx">
+      <DependentUpon>Sign up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Login.resx">
+      <DependentUpon>Student Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Portal.resx">
+      <DependentUpon>Student Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="signUpDataSet.xsc">
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="signUpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>signUpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="signUpDataSet.xss">
+      <DependentUpon>signUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="signUpDataSet1.xsc">
+      <DependentUpon>signUpDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="signUpDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>signUpDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="signUpDataSet1.xss">
+      <DependentUpon>signUpDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
