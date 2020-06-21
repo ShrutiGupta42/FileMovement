@@ -104,6 +104,12 @@
       <DependentUpon>signUpDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Student class.cs" />
+    <Compile Include="Student File Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student File Registration.Designer.cs">
+      <DependentUpon>Student File Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="Sign up.resx">
       <DependentUpon>Sign up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student File Registration.resx">
+      <DependentUpon>Student File Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student Login.resx">
       <DependentUpon>Student Login.cs</DependentUpon>

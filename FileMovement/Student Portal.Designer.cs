@@ -83,6 +83,7 @@
             this.btnStudentFileRegis.TabIndex = 42;
             this.btnStudentFileRegis.Text = "File Registration";
             this.btnStudentFileRegis.UseVisualStyleBackColor = true;
+            this.btnStudentFileRegis.Click += new System.EventHandler(this.btnStudentFileRegis_Click);
             // 
             // Student_Portal
             // 

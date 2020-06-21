@@ -23,5 +23,12 @@ namespace FileMovement
             this.userSignUpTableAdapter.Fill(this.signUpDataSet1.UserSignUp);
             lblStudent.Text = "Welcome : " + Student_class.username;
         }
+
+        private void btnStudentFileRegis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_File_Registration student = new Student_File_Registration();
+            student.Show();
+        }
     }
 }
