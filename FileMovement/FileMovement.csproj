@@ -66,6 +66,12 @@
       <DependentUpon>All Users Details.cs</DependentUpon>
     </Compile>
     <Compile Include="DBAccess.cs" />
+    <Compile Include="Department File Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department File Registration.Designer.cs">
+      <DependentUpon>Department File Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Department Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All Users Details.resx">
       <DependentUpon>All Users Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Department File Registration.resx">
+      <DependentUpon>Department File Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Department Login.resx">
       <DependentUpon>Department Login.cs</DependentUpon>
