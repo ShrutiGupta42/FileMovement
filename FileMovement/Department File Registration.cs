@@ -16,5 +16,27 @@ namespace FileMovement
         {
             InitializeComponent();
         }
+
+        private void btnStudentFileNoGenerator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeptFileNoGenerator_Click(object sender, EventArgs e)
+        {
+            char[] letters = "1234567890".ToCharArray();
+            Random r = new Random();
+            string randomString = "";
+            for (int i = 0; i < 4; i++)
+            {
+                randomString += letters[r.Next(0, 9)].ToString();
+            }
+            MessageBox.Show(randomString);
+        }
+
+        private void btnDeptFileRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

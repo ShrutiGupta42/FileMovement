@@ -74,6 +74,7 @@
             this.btnDeptFileRegis.TabIndex = 38;
             this.btnDeptFileRegis.Text = "File Registration";
             this.btnDeptFileRegis.UseVisualStyleBackColor = true;
+            this.btnDeptFileRegis.Click += new System.EventHandler(this.btnDeptFileRegis_Click);
             // 
             // Department_Portal
             // 

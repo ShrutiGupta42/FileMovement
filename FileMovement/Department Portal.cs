@@ -21,5 +21,12 @@ namespace FileMovement
         {
             lblDept.Text = "Welcome : " + Dept_class.username;
         }
+
+        private void btnDeptFileRegis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Department_File_Registration dept = new Department_File_Registration();
+            dept.Show();
+        }
     }
 }
