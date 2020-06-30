@@ -73,6 +73,7 @@
             this.btnStudentViewFileStatus.TabIndex = 43;
             this.btnStudentViewFileStatus.Text = "View File Status";
             this.btnStudentViewFileStatus.UseVisualStyleBackColor = true;
+            this.btnStudentViewFileStatus.Click += new System.EventHandler(this.btnStudentViewFileStatus_Click);
             // 
             // btnStudentFileRegis
             // 

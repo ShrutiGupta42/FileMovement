@@ -30,5 +30,12 @@ namespace FileMovement
             Student_File_Registration student = new Student_File_Registration();
             student.Show();
         }
+
+        private void btnStudentViewFileStatus_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            File_Status status = new File_Status();
+            status.Show();
+        }
     }
 }

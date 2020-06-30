@@ -64,6 +64,7 @@
             this.btnDeptUpdateFileStatus.TabIndex = 39;
             this.btnDeptUpdateFileStatus.Text = "Update File Status";
             this.btnDeptUpdateFileStatus.UseVisualStyleBackColor = true;
+            this.btnDeptUpdateFileStatus.Click += new System.EventHandler(this.btnDeptUpdateFileStatus_Click);
             // 
             // btnDeptFileRegis
             // 

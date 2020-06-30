@@ -28,5 +28,12 @@ namespace FileMovement
             Department_File_Registration dept = new Department_File_Registration();
             dept.Show();
         }
+
+        private void btnDeptUpdateFileStatus_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Department_Update_File_Validation dept = new Department_Update_File_Validation();
+            dept.Show();
+        }
     }
 }
