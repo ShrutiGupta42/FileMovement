@@ -48,6 +48,7 @@
             this.lblDeptFileRegistration = new System.Windows.Forms.Label();
             this.lblDeptFileNumber = new System.Windows.Forms.Label();
             this.btnDeptFileNoGenerator = new System.Windows.Forms.Button();
+            this.btndeptFileBrowsed = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDeptFileRegister
@@ -76,7 +77,7 @@
             this.txtDeptFileBrowsed.Location = new System.Drawing.Point(254, 364);
             this.txtDeptFileBrowsed.Multiline = true;
             this.txtDeptFileBrowsed.Name = "txtDeptFileBrowsed";
-            this.txtDeptFileBrowsed.Size = new System.Drawing.Size(507, 49);
+            this.txtDeptFileBrowsed.Size = new System.Drawing.Size(388, 20);
             this.txtDeptFileBrowsed.TabIndex = 80;
             // 
             // lblDeptFileBrowsed
@@ -241,11 +242,23 @@
             this.btnDeptFileNoGenerator.UseVisualStyleBackColor = true;
             this.btnDeptFileNoGenerator.Click += new System.EventHandler(this.btnDeptFileNoGenerator_Click);
             // 
+            // btndeptFileBrowsed
+            // 
+            this.btndeptFileBrowsed.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndeptFileBrowsed.Location = new System.Drawing.Point(686, 354);
+            this.btndeptFileBrowsed.Name = "btndeptFileBrowsed";
+            this.btndeptFileBrowsed.Size = new System.Drawing.Size(75, 36);
+            this.btndeptFileBrowsed.TabIndex = 84;
+            this.btndeptFileBrowsed.Text = "Open";
+            this.btndeptFileBrowsed.UseVisualStyleBackColor = true;
+            this.btndeptFileBrowsed.Click += new System.EventHandler(this.btndeptFileBrowsed_Click);
+            // 
             // Department_File_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 653);
+            this.ClientSize = new System.Drawing.Size(800, 641);
+            this.Controls.Add(this.btndeptFileBrowsed);
             this.Controls.Add(this.btnDeptFileNoGenerator);
             this.Controls.Add(this.btnDeptFileRegister);
             this.Controls.Add(this.lblDeptTypeOfUser);
@@ -296,5 +309,6 @@
         private System.Windows.Forms.Label lblDeptFileRegistration;
         private System.Windows.Forms.Label lblDeptFileNumber;
         private System.Windows.Forms.Button btnDeptFileNoGenerator;
+        private System.Windows.Forms.Button btndeptFileBrowsed;
     }
 }

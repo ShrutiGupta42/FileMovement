@@ -154,10 +154,6 @@ namespace FileMovement
             {
                 MessageBox.Show("Please enter subject details of file!!");
             }
-            else if (fileBrowsed.Equals(""))
-            {
-                MessageBox.Show("Please enter File Browsed!!");
-            }
             else if (date.Equals(""))
             {
                 MessageBox.Show("Please enter Date!!");
@@ -195,6 +191,14 @@ namespace FileMovement
                 }
             }
 
+        }
+        OpenFileDialog ofd = new OpenFileDialog();
+        private void btnStudentFileBrowsed_Click(object sender, EventArgs e)
+        {
+           if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                txtStudentFileBrowsed.Text = ofd.FileName;
+            }
         }
     }
 }
