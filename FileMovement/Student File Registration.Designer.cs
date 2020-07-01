@@ -49,12 +49,18 @@
             this.btnStudentFileRegister = new System.Windows.Forms.Button();
             this.btnStudentFileBrowsed = new System.Windows.Forms.Button();
             this.txtStudentFileBrowsed = new System.Windows.Forms.TextBox();
+            this.lblStudentFileLastUpdated = new System.Windows.Forms.Label();
+            this.lblStudentActionFile = new System.Windows.Forms.Label();
+            this.lblStudentFileStatus = new System.Windows.Forms.Label();
+            this.dateStudentFileLastUpdated = new System.Windows.Forms.DateTimePicker();
+            this.txtStudentFileAction = new System.Windows.Forms.TextBox();
+            this.txtStudentFileStatus = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnStudentFileNoGenerator
             // 
             this.btnStudentFileNoGenerator.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentFileNoGenerator.Location = new System.Drawing.Point(498, 97);
+            this.btnStudentFileNoGenerator.Location = new System.Drawing.Point(495, 65);
             this.btnStudentFileNoGenerator.Name = "btnStudentFileNoGenerator";
             this.btnStudentFileNoGenerator.Size = new System.Drawing.Size(224, 33);
             this.btnStudentFileNoGenerator.TabIndex = 43;
@@ -66,7 +72,7 @@
             // 
             this.lblStudentFileNumber.AutoSize = true;
             this.lblStudentFileNumber.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileNumber.Location = new System.Drawing.Point(33, 102);
+            this.lblStudentFileNumber.Location = new System.Drawing.Point(30, 70);
             this.lblStudentFileNumber.Name = "lblStudentFileNumber";
             this.lblStudentFileNumber.Size = new System.Drawing.Size(122, 22);
             this.lblStudentFileNumber.TabIndex = 44;
@@ -77,7 +83,7 @@
             // 
             this.lblStudentFileRegistration.AutoSize = true;
             this.lblStudentFileRegistration.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileRegistration.Location = new System.Drawing.Point(270, 39);
+            this.lblStudentFileRegistration.Location = new System.Drawing.Point(281, 23);
             this.lblStudentFileRegistration.Name = "lblStudentFileRegistration";
             this.lblStudentFileRegistration.Size = new System.Drawing.Size(232, 24);
             this.lblStudentFileRegistration.TabIndex = 45;
@@ -86,7 +92,7 @@
             // 
             // txtStudentFileNumber
             // 
-            this.txtStudentFileNumber.Location = new System.Drawing.Point(254, 102);
+            this.txtStudentFileNumber.Location = new System.Drawing.Point(251, 70);
             this.txtStudentFileNumber.Name = "txtStudentFileNumber";
             this.txtStudentFileNumber.Size = new System.Drawing.Size(102, 20);
             this.txtStudentFileNumber.TabIndex = 46;
@@ -96,7 +102,7 @@
             // 
             this.lblStudentFileSubject.AutoSize = true;
             this.lblStudentFileSubject.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileSubject.Location = new System.Drawing.Point(33, 158);
+            this.lblStudentFileSubject.Location = new System.Drawing.Point(30, 126);
             this.lblStudentFileSubject.Name = "lblStudentFileSubject";
             this.lblStudentFileSubject.Size = new System.Drawing.Size(81, 22);
             this.lblStudentFileSubject.TabIndex = 47;
@@ -105,7 +111,7 @@
             // 
             // txtStudentFileSubject
             // 
-            this.txtStudentFileSubject.Location = new System.Drawing.Point(254, 158);
+            this.txtStudentFileSubject.Location = new System.Drawing.Point(251, 115);
             this.txtStudentFileSubject.Multiline = true;
             this.txtStudentFileSubject.Name = "txtStudentFileSubject";
             this.txtStudentFileSubject.Size = new System.Drawing.Size(507, 47);
@@ -116,7 +122,7 @@
             // 
             this.lblStudentFileDept.AutoSize = true;
             this.lblStudentFileDept.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileDept.Location = new System.Drawing.Point(33, 237);
+            this.lblStudentFileDept.Location = new System.Drawing.Point(30, 182);
             this.lblStudentFileDept.Name = "lblStudentFileDept";
             this.lblStudentFileDept.Size = new System.Drawing.Size(117, 22);
             this.lblStudentFileDept.TabIndex = 49;
@@ -125,7 +131,7 @@
             // 
             // dateStudentFile
             // 
-            this.dateStudentFile.Location = new System.Drawing.Point(254, 433);
+            this.dateStudentFile.Location = new System.Drawing.Point(251, 357);
             this.dateStudentFile.Name = "dateStudentFile";
             this.dateStudentFile.Size = new System.Drawing.Size(200, 20);
             this.dateStudentFile.TabIndex = 50;
@@ -133,7 +139,7 @@
             // 
             // txtStudentFileSubjectDetails
             // 
-            this.txtStudentFileSubjectDetails.Location = new System.Drawing.Point(254, 290);
+            this.txtStudentFileSubjectDetails.Location = new System.Drawing.Point(251, 227);
             this.txtStudentFileSubjectDetails.Multiline = true;
             this.txtStudentFileSubjectDetails.Name = "txtStudentFileSubjectDetails";
             this.txtStudentFileSubjectDetails.Size = new System.Drawing.Size(507, 47);
@@ -144,7 +150,7 @@
             // 
             this.lblStudentFileSubjectDetails.AutoSize = true;
             this.lblStudentFileSubjectDetails.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileSubjectDetails.Location = new System.Drawing.Point(33, 290);
+            this.lblStudentFileSubjectDetails.Location = new System.Drawing.Point(30, 242);
             this.lblStudentFileSubjectDetails.Name = "lblStudentFileSubjectDetails";
             this.lblStudentFileSubjectDetails.Size = new System.Drawing.Size(143, 22);
             this.lblStudentFileSubjectDetails.TabIndex = 51;
@@ -158,7 +164,7 @@
             "Computer Laboratory Department"});
             this.txtStudentFileDept.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtStudentFileDept.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtStudentFileDept.Location = new System.Drawing.Point(254, 237);
+            this.txtStudentFileDept.Location = new System.Drawing.Point(251, 182);
             this.txtStudentFileDept.Name = "txtStudentFileDept";
             this.txtStudentFileDept.Size = new System.Drawing.Size(209, 20);
             this.txtStudentFileDept.TabIndex = 53;
@@ -168,7 +174,7 @@
             // 
             this.lblStudentFileDate.AutoSize = true;
             this.lblStudentFileDate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileDate.Location = new System.Drawing.Point(33, 433);
+            this.lblStudentFileDate.Location = new System.Drawing.Point(29, 357);
             this.lblStudentFileDate.Name = "lblStudentFileDate";
             this.lblStudentFileDate.Size = new System.Drawing.Size(59, 22);
             this.lblStudentFileDate.TabIndex = 54;
@@ -177,7 +183,7 @@
             // 
             // txtStudentFileName
             // 
-            this.txtStudentFileName.Location = new System.Drawing.Point(254, 488);
+            this.txtStudentFileName.Location = new System.Drawing.Point(251, 401);
             this.txtStudentFileName.Name = "txtStudentFileName";
             this.txtStudentFileName.Size = new System.Drawing.Size(209, 20);
             this.txtStudentFileName.TabIndex = 56;
@@ -187,7 +193,7 @@
             // 
             this.lblStudentFileName.AutoSize = true;
             this.lblStudentFileName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileName.Location = new System.Drawing.Point(33, 488);
+            this.lblStudentFileName.Location = new System.Drawing.Point(29, 401);
             this.lblStudentFileName.Name = "lblStudentFileName";
             this.lblStudentFileName.Size = new System.Drawing.Size(68, 22);
             this.lblStudentFileName.TabIndex = 55;
@@ -201,7 +207,7 @@
             "Department User"});
             this.txtStudentFileUser.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtStudentFileUser.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtStudentFileUser.Location = new System.Drawing.Point(254, 536);
+            this.txtStudentFileUser.Location = new System.Drawing.Point(251, 443);
             this.txtStudentFileUser.Name = "txtStudentFileUser";
             this.txtStudentFileUser.Size = new System.Drawing.Size(209, 20);
             this.txtStudentFileUser.TabIndex = 58;
@@ -211,7 +217,7 @@
             // 
             this.lblStudentFileUser.AutoSize = true;
             this.lblStudentFileUser.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileUser.Location = new System.Drawing.Point(33, 536);
+            this.lblStudentFileUser.Location = new System.Drawing.Point(29, 443);
             this.lblStudentFileUser.Name = "lblStudentFileUser";
             this.lblStudentFileUser.Size = new System.Drawing.Size(58, 22);
             this.lblStudentFileUser.TabIndex = 57;
@@ -222,7 +228,7 @@
             // 
             this.lblStudentFileBrowsed.AutoSize = true;
             this.lblStudentFileBrowsed.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentFileBrowsed.Location = new System.Drawing.Point(34, 372);
+            this.lblStudentFileBrowsed.Location = new System.Drawing.Point(30, 304);
             this.lblStudentFileBrowsed.Name = "lblStudentFileBrowsed";
             this.lblStudentFileBrowsed.Size = new System.Drawing.Size(128, 22);
             this.lblStudentFileBrowsed.TabIndex = 59;
@@ -233,7 +239,7 @@
             // 
             this.lblStudentTypeOfUser.AutoSize = true;
             this.lblStudentTypeOfUser.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentTypeOfUser.Location = new System.Drawing.Point(542, 539);
+            this.lblStudentTypeOfUser.Location = new System.Drawing.Point(492, 445);
             this.lblStudentTypeOfUser.Name = "lblStudentTypeOfUser";
             this.lblStudentTypeOfUser.Size = new System.Drawing.Size(85, 15);
             this.lblStudentTypeOfUser.TabIndex = 61;
@@ -243,7 +249,7 @@
             // btnStudentFileRegister
             // 
             this.btnStudentFileRegister.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentFileRegister.Location = new System.Drawing.Point(647, 582);
+            this.btnStudentFileRegister.Location = new System.Drawing.Point(640, 610);
             this.btnStudentFileRegister.Name = "btnStudentFileRegister";
             this.btnStudentFileRegister.Size = new System.Drawing.Size(95, 32);
             this.btnStudentFileRegister.TabIndex = 62;
@@ -254,7 +260,7 @@
             // btnStudentFileBrowsed
             // 
             this.btnStudentFileBrowsed.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentFileBrowsed.Location = new System.Drawing.Point(686, 365);
+            this.btnStudentFileBrowsed.Location = new System.Drawing.Point(683, 297);
             this.btnStudentFileBrowsed.Name = "btnStudentFileBrowsed";
             this.btnStudentFileBrowsed.Size = new System.Drawing.Size(75, 36);
             this.btnStudentFileBrowsed.TabIndex = 64;
@@ -264,16 +270,76 @@
             // 
             // txtStudentFileBrowsed
             // 
-            this.txtStudentFileBrowsed.Location = new System.Drawing.Point(254, 375);
+            this.txtStudentFileBrowsed.Location = new System.Drawing.Point(251, 307);
             this.txtStudentFileBrowsed.Name = "txtStudentFileBrowsed";
             this.txtStudentFileBrowsed.Size = new System.Drawing.Size(388, 20);
             this.txtStudentFileBrowsed.TabIndex = 65;
+            // 
+            // lblStudentFileLastUpdated
+            // 
+            this.lblStudentFileLastUpdated.AutoSize = true;
+            this.lblStudentFileLastUpdated.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentFileLastUpdated.Location = new System.Drawing.Point(30, 490);
+            this.lblStudentFileLastUpdated.Name = "lblStudentFileLastUpdated";
+            this.lblStudentFileLastUpdated.Size = new System.Drawing.Size(166, 22);
+            this.lblStudentFileLastUpdated.TabIndex = 66;
+            this.lblStudentFileLastUpdated.Text = "Date last Updated :";
+            // 
+            // lblStudentActionFile
+            // 
+            this.lblStudentActionFile.AutoSize = true;
+            this.lblStudentActionFile.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentActionFile.Location = new System.Drawing.Point(30, 532);
+            this.lblStudentActionFile.Name = "lblStudentActionFile";
+            this.lblStudentActionFile.Size = new System.Drawing.Size(191, 22);
+            this.lblStudentActionFile.TabIndex = 67;
+            this.lblStudentActionFile.Text = "Action Taken To File :";
+            // 
+            // lblStudentFileStatus
+            // 
+            this.lblStudentFileStatus.AutoSize = true;
+            this.lblStudentFileStatus.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentFileStatus.Location = new System.Drawing.Point(29, 598);
+            this.lblStudentFileStatus.Name = "lblStudentFileStatus";
+            this.lblStudentFileStatus.Size = new System.Drawing.Size(112, 22);
+            this.lblStudentFileStatus.TabIndex = 68;
+            this.lblStudentFileStatus.Text = "File Status : ";
+            // 
+            // dateStudentFileLastUpdated
+            // 
+            this.dateStudentFileLastUpdated.Location = new System.Drawing.Point(251, 491);
+            this.dateStudentFileLastUpdated.Name = "dateStudentFileLastUpdated";
+            this.dateStudentFileLastUpdated.Size = new System.Drawing.Size(200, 20);
+            this.dateStudentFileLastUpdated.TabIndex = 69;
+            // 
+            // txtStudentFileAction
+            // 
+            this.txtStudentFileAction.Location = new System.Drawing.Point(251, 533);
+            this.txtStudentFileAction.Multiline = true;
+            this.txtStudentFileAction.Name = "txtStudentFileAction";
+            this.txtStudentFileAction.ReadOnly = true;
+            this.txtStudentFileAction.Size = new System.Drawing.Size(200, 21);
+            this.txtStudentFileAction.TabIndex = 70;
+            // 
+            // txtStudentFileStatus
+            // 
+            this.txtStudentFileStatus.Location = new System.Drawing.Point(251, 599);
+            this.txtStudentFileStatus.Name = "txtStudentFileStatus";
+            this.txtStudentFileStatus.ReadOnly = true;
+            this.txtStudentFileStatus.Size = new System.Drawing.Size(200, 20);
+            this.txtStudentFileStatus.TabIndex = 71;
             // 
             // Student_File_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 641);
+            this.ClientSize = new System.Drawing.Size(800, 679);
+            this.Controls.Add(this.txtStudentFileStatus);
+            this.Controls.Add(this.txtStudentFileAction);
+            this.Controls.Add(this.dateStudentFileLastUpdated);
+            this.Controls.Add(this.lblStudentFileStatus);
+            this.Controls.Add(this.lblStudentActionFile);
+            this.Controls.Add(this.lblStudentFileLastUpdated);
             this.Controls.Add(this.txtStudentFileBrowsed);
             this.Controls.Add(this.btnStudentFileBrowsed);
             this.Controls.Add(this.btnStudentFileRegister);
@@ -327,5 +393,11 @@
         private System.Windows.Forms.Button btnStudentFileRegister;
         private System.Windows.Forms.Button btnStudentFileBrowsed;
         private System.Windows.Forms.TextBox txtStudentFileBrowsed;
+        private System.Windows.Forms.Label lblStudentFileLastUpdated;
+        private System.Windows.Forms.Label lblStudentActionFile;
+        private System.Windows.Forms.Label lblStudentFileStatus;
+        private System.Windows.Forms.DateTimePicker dateStudentFileLastUpdated;
+        private System.Windows.Forms.TextBox txtStudentFileAction;
+        private System.Windows.Forms.TextBox txtStudentFileStatus;
     }
 }

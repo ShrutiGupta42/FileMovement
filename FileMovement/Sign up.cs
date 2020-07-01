@@ -45,6 +45,7 @@ namespace FileMovement
 
                 insertCommand.Parameters.AddWithValue("@userName", userName);
                 insertCommand.Parameters.AddWithValue("@userPassword", userPassword);
+                
 
                 int row = objDBAccess.executeQuery(insertCommand);
 

@@ -42,6 +42,9 @@ namespace FileMovement
             string date = dateDeptFile.Text;
             string name = txtDeptFileName.Text;
             string user = txtDeptFileUser.Text;
+            string dateLastUpdated = dateDeptFileLastUpdated.Text;
+            string actionTakenToFile = txtDeptFileAction.Text;
+            string fileStatus = txtDeptFileStatus.Text;
 
             if (fileNumber.Equals(""))
             {
@@ -73,7 +76,7 @@ namespace FileMovement
             }
             else
             {
-                SqlCommand insertCommand = new SqlCommand("insert into fileRegistration(FILE_NO,SUBJECT,DEPT,SUB_DETAILS,FILE_BROWSED,DATE,NAME,[USER]) values(@fileNumber, @subject, @department, @subjectDetails, @fileBrowsed, @date, @name, @user)");
+                SqlCommand insertCommand = new SqlCommand("insert into fileRegistration(FILE_NO,SUBJECT,DEPT,SUB_DETAILS,FILE_BROWSED,DATE,NAME,[USER],F_LAST_UPDATED,TOT_ACTION,FILE_STATUS) values(@fileNumber, @subject, @department, @subjectDetails, @fileBrowsed, @date, @name, @user, @dateLastUpdated, @actionTakenToFile, @fileStatus)");
 
                 insertCommand.Parameters.AddWithValue("@fileNumber", fileNumber);
                 insertCommand.Parameters.AddWithValue("@subject", subject);
@@ -83,6 +86,9 @@ namespace FileMovement
                 insertCommand.Parameters.AddWithValue("@date", date);
                 insertCommand.Parameters.AddWithValue("@name", name);
                 insertCommand.Parameters.AddWithValue("@user", user);
+                insertCommand.Parameters.AddWithValue("@dateLastUpdated", dateLastUpdated);
+                insertCommand.Parameters.AddWithValue("@actionTakenToFile", actionTakenToFile);
+                insertCommand.Parameters.AddWithValue("@fileStatus", fileStatus);
 
                 int row = objDbAccess.executeQuery(insertCommand);
 
