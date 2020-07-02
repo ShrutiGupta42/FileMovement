@@ -44,7 +44,7 @@ namespace FileMovement
                 }
                 else
                 {
-                    MessageBox.Show("Error Occured while removing the file.. Please try again!!");
+                    MessageBox.Show("Error Occured while removing the file..! Please try again!!");
                 }
 
             }
