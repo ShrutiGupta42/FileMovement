@@ -55,16 +55,17 @@
             this.lblDeptFileStatus = new System.Windows.Forms.Label();
             this.lblDeptActionFile = new System.Windows.Forms.Label();
             this.lblDeptFileLastUpdated = new System.Windows.Forms.Label();
+            this.btnDeptPortal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDeptFileRegister
             // 
             this.btnDeptFileRegister.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeptFileRegister.Location = new System.Drawing.Point(644, 635);
+            this.btnDeptFileRegister.Location = new System.Drawing.Point(564, 608);
             this.btnDeptFileRegister.Name = "btnDeptFileRegister";
-            this.btnDeptFileRegister.Size = new System.Drawing.Size(95, 32);
+            this.btnDeptFileRegister.Size = new System.Drawing.Size(156, 32);
             this.btnDeptFileRegister.TabIndex = 82;
-            this.btnDeptFileRegister.Text = "Register";
+            this.btnDeptFileRegister.Text = "Register File";
             this.btnDeptFileRegister.UseVisualStyleBackColor = true;
             this.btnDeptFileRegister.Click += new System.EventHandler(this.btnDeptFileRegister_Click);
             // 
@@ -313,11 +314,23 @@
             this.lblDeptFileLastUpdated.TabIndex = 85;
             this.lblDeptFileLastUpdated.Text = "Date last Updated :";
             // 
+            // btnDeptPortal
+            // 
+            this.btnDeptPortal.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeptPortal.Location = new System.Drawing.Point(528, 651);
+            this.btnDeptPortal.Name = "btnDeptPortal";
+            this.btnDeptPortal.Size = new System.Drawing.Size(233, 32);
+            this.btnDeptPortal.TabIndex = 91;
+            this.btnDeptPortal.Text = "Department Portal";
+            this.btnDeptPortal.UseVisualStyleBackColor = true;
+            this.btnDeptPortal.Click += new System.EventHandler(this.btnDeptPortal_Click);
+            // 
             // Department_File_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 679);
+            this.ClientSize = new System.Drawing.Size(800, 695);
+            this.Controls.Add(this.btnDeptPortal);
             this.Controls.Add(this.txtDeptFileStatus);
             this.Controls.Add(this.txtDeptFileAction);
             this.Controls.Add(this.dateDeptFileLastUpdated);
@@ -382,5 +395,6 @@
         private System.Windows.Forms.Label lblDeptFileStatus;
         private System.Windows.Forms.Label lblDeptActionFile;
         private System.Windows.Forms.Label lblDeptFileLastUpdated;
+        private System.Windows.Forms.Button btnDeptPortal;
     }
 }

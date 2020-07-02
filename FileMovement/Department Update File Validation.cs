@@ -51,9 +51,14 @@ namespace FileMovement
                     fileStatus = dtUsers.Rows[0]["FILE_STATUS"].ToString();
 
                     MessageBox.Show("File Number is valid!!");
+                    objDbAccess.closeConn();
                     this.Hide();
                     Department_User_Update_File_Status dept = new Department_User_Update_File_Status();
                     dept.Show();
+                }
+                else
+                {
+                    MessageBox.Show("File number is Incorrect.. Please Recheck once and try again!!");
                 }
             }
         }

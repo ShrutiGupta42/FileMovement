@@ -35,5 +35,12 @@ namespace FileMovement
             Department_Update_File_Validation dept = new Department_Update_File_Validation();
             dept.Show();
         }
+
+        private void btnDeptLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fileMovement file = new fileMovement();
+            file.Show();
+        }
     }
 }

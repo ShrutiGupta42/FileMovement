@@ -103,5 +103,12 @@ namespace FileMovement
 
             }
         }
+
+        private void btnDeptPortalUpdateFile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Department_Portal portal = new Department_Portal();
+            portal.Show();
+        }
     }
 }

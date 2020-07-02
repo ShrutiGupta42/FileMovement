@@ -35,6 +35,7 @@
             this.lblStudent = new System.Windows.Forms.Label();
             this.btnStudentViewFileStatus = new System.Windows.Forms.Button();
             this.btnStudentFileRegis = new System.Windows.Forms.Button();
+            this.btnStudentLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.signUpDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userSignUpBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -86,11 +87,23 @@
             this.btnStudentFileRegis.UseVisualStyleBackColor = true;
             this.btnStudentFileRegis.Click += new System.EventHandler(this.btnStudentFileRegis_Click);
             // 
+            // btnStudentLogout
+            // 
+            this.btnStudentLogout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentLogout.Location = new System.Drawing.Point(478, 316);
+            this.btnStudentLogout.Name = "btnStudentLogout";
+            this.btnStudentLogout.Size = new System.Drawing.Size(119, 33);
+            this.btnStudentLogout.TabIndex = 44;
+            this.btnStudentLogout.Text = "Logout";
+            this.btnStudentLogout.UseVisualStyleBackColor = true;
+            this.btnStudentLogout.Click += new System.EventHandler(this.btnStudentLogout_Click);
+            // 
             // Student_Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 395);
+            this.Controls.Add(this.btnStudentLogout);
             this.Controls.Add(this.btnStudentViewFileStatus);
             this.Controls.Add(this.btnStudentFileRegis);
             this.Controls.Add(this.lblStudent);
@@ -112,5 +125,6 @@
         private System.Windows.Forms.Label lblStudent;
         private System.Windows.Forms.Button btnStudentViewFileStatus;
         private System.Windows.Forms.Button btnStudentFileRegis;
+        private System.Windows.Forms.Button btnStudentLogout;
     }
 }

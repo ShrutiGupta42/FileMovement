@@ -30,5 +30,19 @@ namespace FileMovement
             All_Users_Details users = new All_Users_Details();
             users.Show();
         }
+
+        private void btnAdminLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fileMovement file = new fileMovement();
+            file.Show();
+        }
+
+        private void btnAdminCloseFile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Remove_File remove = new Remove_File();
+            remove.Show();
+        }
     }
 }

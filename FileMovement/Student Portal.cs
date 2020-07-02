@@ -34,8 +34,15 @@ namespace FileMovement
         private void btnStudentViewFileStatus_Click(object sender, EventArgs e)
         {
             this.Hide();
-            File_Status status = new File_Status();
+            Student_File_Status_Validation status = new Student_File_Status_Validation();
             status.Show();
+        }
+
+        private void btnStudentLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fileMovement file = new fileMovement();
+            file.Show();
         }
     }
 }

@@ -37,6 +37,7 @@
             this.btnAdminCloseFile = new System.Windows.Forms.Button();
             this.btnAdminCreateDept = new System.Windows.Forms.Button();
             this.btnAdminManageUserInfo = new System.Windows.Forms.Button();
+            this.btnAdminLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.signUpDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userSignUpBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -85,6 +86,7 @@
             this.btnAdminCloseFile.TabIndex = 42;
             this.btnAdminCloseFile.Text = "Close File";
             this.btnAdminCloseFile.UseVisualStyleBackColor = true;
+            this.btnAdminCloseFile.Click += new System.EventHandler(this.btnAdminCloseFile_Click);
             // 
             // btnAdminCreateDept
             // 
@@ -107,11 +109,23 @@
             this.btnAdminManageUserInfo.UseVisualStyleBackColor = true;
             this.btnAdminManageUserInfo.Click += new System.EventHandler(this.btnAdminManageUserInfo_Click);
             // 
+            // btnAdminLogout
+            // 
+            this.btnAdminLogout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminLogout.Location = new System.Drawing.Point(493, 327);
+            this.btnAdminLogout.Name = "btnAdminLogout";
+            this.btnAdminLogout.Size = new System.Drawing.Size(119, 33);
+            this.btnAdminLogout.TabIndex = 45;
+            this.btnAdminLogout.Text = "Logout";
+            this.btnAdminLogout.UseVisualStyleBackColor = true;
+            this.btnAdminLogout.Click += new System.EventHandler(this.btnAdminLogout_Click);
+            // 
             // Administrator_Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 395);
+            this.Controls.Add(this.btnAdminLogout);
             this.Controls.Add(this.btnAdminManageUserInfo);
             this.Controls.Add(this.btnAdminViewReport);
             this.Controls.Add(this.btnAdminCloseFile);
@@ -137,5 +151,6 @@
         private System.Windows.Forms.Button btnAdminCloseFile;
         private System.Windows.Forms.Button btnAdminCreateDept;
         private System.Windows.Forms.Button btnAdminManageUserInfo;
+        private System.Windows.Forms.Button btnAdminLogout;
     }
 }

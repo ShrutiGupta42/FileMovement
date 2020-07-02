@@ -206,5 +206,12 @@ namespace FileMovement
                 txtStudentFileBrowsed.Text = ofd.FileName;
             }
         }
+
+        private void btnStudentPortal_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Student_Portal portal = new Student_Portal();
+            portal.Show();
+        }
     }
 }

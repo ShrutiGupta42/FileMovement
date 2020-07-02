@@ -32,6 +32,7 @@
             this.btnDeptForwardFile = new System.Windows.Forms.Button();
             this.btnDeptUpdateFileStatus = new System.Windows.Forms.Button();
             this.btnDeptFileRegis = new System.Windows.Forms.Button();
+            this.btnDeptLogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDept
@@ -77,11 +78,23 @@
             this.btnDeptFileRegis.UseVisualStyleBackColor = true;
             this.btnDeptFileRegis.Click += new System.EventHandler(this.btnDeptFileRegis_Click);
             // 
+            // btnDeptLogout
+            // 
+            this.btnDeptLogout.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeptLogout.Location = new System.Drawing.Point(487, 333);
+            this.btnDeptLogout.Name = "btnDeptLogout";
+            this.btnDeptLogout.Size = new System.Drawing.Size(119, 33);
+            this.btnDeptLogout.TabIndex = 41;
+            this.btnDeptLogout.Text = "Logout";
+            this.btnDeptLogout.UseVisualStyleBackColor = true;
+            this.btnDeptLogout.Click += new System.EventHandler(this.btnDeptLogout_Click);
+            // 
             // Department_Portal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 395);
+            this.Controls.Add(this.btnDeptLogout);
             this.Controls.Add(this.btnDeptForwardFile);
             this.Controls.Add(this.btnDeptUpdateFileStatus);
             this.Controls.Add(this.btnDeptFileRegis);
@@ -101,5 +114,6 @@
         private System.Windows.Forms.Button btnDeptForwardFile;
         private System.Windows.Forms.Button btnDeptUpdateFileStatus;
         private System.Windows.Forms.Button btnDeptFileRegis;
+        private System.Windows.Forms.Button btnDeptLogout;
     }
 }

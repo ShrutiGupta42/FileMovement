@@ -55,6 +55,7 @@
             this.dateStudentFileLastUpdated = new System.Windows.Forms.DateTimePicker();
             this.txtStudentFileAction = new System.Windows.Forms.TextBox();
             this.txtStudentFileStatus = new System.Windows.Forms.TextBox();
+            this.btnStudentPortal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStudentFileNoGenerator
@@ -249,11 +250,11 @@
             // btnStudentFileRegister
             // 
             this.btnStudentFileRegister.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStudentFileRegister.Location = new System.Drawing.Point(640, 610);
+            this.btnStudentFileRegister.Location = new System.Drawing.Point(587, 647);
             this.btnStudentFileRegister.Name = "btnStudentFileRegister";
-            this.btnStudentFileRegister.Size = new System.Drawing.Size(95, 32);
+            this.btnStudentFileRegister.Size = new System.Drawing.Size(171, 32);
             this.btnStudentFileRegister.TabIndex = 62;
-            this.btnStudentFileRegister.Text = "Register";
+            this.btnStudentFileRegister.Text = "Register File";
             this.btnStudentFileRegister.UseVisualStyleBackColor = true;
             this.btnStudentFileRegister.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -329,11 +330,23 @@
             this.txtStudentFileStatus.Size = new System.Drawing.Size(200, 20);
             this.txtStudentFileStatus.TabIndex = 71;
             // 
+            // btnStudentPortal
+            // 
+            this.btnStudentPortal.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentPortal.Location = new System.Drawing.Point(397, 647);
+            this.btnStudentPortal.Name = "btnStudentPortal";
+            this.btnStudentPortal.Size = new System.Drawing.Size(171, 32);
+            this.btnStudentPortal.TabIndex = 72;
+            this.btnStudentPortal.Text = "Student Portal";
+            this.btnStudentPortal.UseVisualStyleBackColor = true;
+            this.btnStudentPortal.Click += new System.EventHandler(this.btnStudentPortal_Click);
+            // 
             // Student_File_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 679);
+            this.ClientSize = new System.Drawing.Size(800, 708);
+            this.Controls.Add(this.btnStudentPortal);
             this.Controls.Add(this.txtStudentFileStatus);
             this.Controls.Add(this.txtStudentFileAction);
             this.Controls.Add(this.dateStudentFileLastUpdated);
@@ -399,5 +412,6 @@
         private System.Windows.Forms.DateTimePicker dateStudentFileLastUpdated;
         private System.Windows.Forms.TextBox txtStudentFileAction;
         private System.Windows.Forms.TextBox txtStudentFileStatus;
+        private System.Windows.Forms.Button btnStudentPortal;
     }
 }

@@ -54,6 +54,7 @@
             this.lblUpdateFileRegistration = new System.Windows.Forms.Label();
             this.lblUpdateFileNumber = new System.Windows.Forms.Label();
             this.txtUpdateFileStatus = new System.Windows.Forms.TextBox();
+            this.btnDeptPortalUpdateFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUpdateFileAction
@@ -122,11 +123,11 @@
             // btnUpdateFileRegister
             // 
             this.btnUpdateFileRegister.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateFileRegister.Location = new System.Drawing.Point(647, 617);
+            this.btnUpdateFileRegister.Location = new System.Drawing.Point(555, 605);
             this.btnUpdateFileRegister.Name = "btnUpdateFileRegister";
-            this.btnUpdateFileRegister.Size = new System.Drawing.Size(95, 32);
+            this.btnUpdateFileRegister.Size = new System.Drawing.Size(233, 32);
             this.btnUpdateFileRegister.TabIndex = 90;
-            this.btnUpdateFileRegister.Text = "Update";
+            this.btnUpdateFileRegister.Text = "Update File";
             this.btnUpdateFileRegister.UseVisualStyleBackColor = true;
             this.btnUpdateFileRegister.Click += new System.EventHandler(this.btnUpdateFileRegister_Click);
             // 
@@ -302,11 +303,23 @@
             this.txtUpdateFileStatus.Size = new System.Drawing.Size(200, 20);
             this.txtUpdateFileStatus.TabIndex = 98;
             // 
+            // btnDeptPortalUpdateFile
+            // 
+            this.btnDeptPortalUpdateFile.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeptPortalUpdateFile.Location = new System.Drawing.Point(555, 655);
+            this.btnDeptPortalUpdateFile.Name = "btnDeptPortalUpdateFile";
+            this.btnDeptPortalUpdateFile.Size = new System.Drawing.Size(233, 32);
+            this.btnDeptPortalUpdateFile.TabIndex = 99;
+            this.btnDeptPortalUpdateFile.Text = "Department Portal";
+            this.btnDeptPortalUpdateFile.UseVisualStyleBackColor = true;
+            this.btnDeptPortalUpdateFile.Click += new System.EventHandler(this.btnDeptPortalUpdateFile_Click);
+            // 
             // Department_User_Update_File_Status
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 679);
+            this.ClientSize = new System.Drawing.Size(800, 720);
+            this.Controls.Add(this.btnDeptPortalUpdateFile);
             this.Controls.Add(this.txtUpdateFileStatus);
             this.Controls.Add(this.txtUpdateFileAction);
             this.Controls.Add(this.dateUpdateFileLastUpdated);
@@ -369,5 +382,6 @@
         private System.Windows.Forms.Label lblUpdateFileRegistration;
         private System.Windows.Forms.Label lblUpdateFileNumber;
         private System.Windows.Forms.TextBox txtUpdateFileStatus;
+        private System.Windows.Forms.Button btnDeptPortalUpdateFile;
     }
 }
