@@ -44,5 +44,12 @@ namespace FileMovement
             Remove_File remove = new Remove_File();
             remove.Show();
         }
+
+        private void btnAdminViewReport_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            All_Reports reports = new All_Reports();
+            reports.Show();
+        }
     }
 }

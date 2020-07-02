@@ -35,7 +35,6 @@
             this.lblAdmin = new System.Windows.Forms.Label();
             this.btnAdminViewReport = new System.Windows.Forms.Button();
             this.btnAdminCloseFile = new System.Windows.Forms.Button();
-            this.btnAdminCreateDept = new System.Windows.Forms.Button();
             this.btnAdminManageUserInfo = new System.Windows.Forms.Button();
             this.btnAdminLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.signUpDataSet)).BeginInit();
@@ -70,17 +69,18 @@
             // btnAdminViewReport
             // 
             this.btnAdminViewReport.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminViewReport.Location = new System.Drawing.Point(199, 240);
+            this.btnAdminViewReport.Location = new System.Drawing.Point(199, 212);
             this.btnAdminViewReport.Name = "btnAdminViewReport";
             this.btnAdminViewReport.Size = new System.Drawing.Size(250, 33);
             this.btnAdminViewReport.TabIndex = 43;
             this.btnAdminViewReport.Text = "View Report";
             this.btnAdminViewReport.UseVisualStyleBackColor = true;
+            this.btnAdminViewReport.Click += new System.EventHandler(this.btnAdminViewReport_Click);
             // 
             // btnAdminCloseFile
             // 
             this.btnAdminCloseFile.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminCloseFile.Location = new System.Drawing.Point(199, 181);
+            this.btnAdminCloseFile.Location = new System.Drawing.Point(199, 144);
             this.btnAdminCloseFile.Name = "btnAdminCloseFile";
             this.btnAdminCloseFile.Size = new System.Drawing.Size(250, 33);
             this.btnAdminCloseFile.TabIndex = 42;
@@ -88,20 +88,10 @@
             this.btnAdminCloseFile.UseVisualStyleBackColor = true;
             this.btnAdminCloseFile.Click += new System.EventHandler(this.btnAdminCloseFile_Click);
             // 
-            // btnAdminCreateDept
-            // 
-            this.btnAdminCreateDept.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminCreateDept.Location = new System.Drawing.Point(199, 121);
-            this.btnAdminCreateDept.Name = "btnAdminCreateDept";
-            this.btnAdminCreateDept.Size = new System.Drawing.Size(250, 33);
-            this.btnAdminCreateDept.TabIndex = 41;
-            this.btnAdminCreateDept.Text = "Create Department";
-            this.btnAdminCreateDept.UseVisualStyleBackColor = true;
-            // 
             // btnAdminManageUserInfo
             // 
             this.btnAdminManageUserInfo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminManageUserInfo.Location = new System.Drawing.Point(199, 295);
+            this.btnAdminManageUserInfo.Location = new System.Drawing.Point(199, 279);
             this.btnAdminManageUserInfo.Name = "btnAdminManageUserInfo";
             this.btnAdminManageUserInfo.Size = new System.Drawing.Size(250, 33);
             this.btnAdminManageUserInfo.TabIndex = 44;
@@ -129,7 +119,6 @@
             this.Controls.Add(this.btnAdminManageUserInfo);
             this.Controls.Add(this.btnAdminViewReport);
             this.Controls.Add(this.btnAdminCloseFile);
-            this.Controls.Add(this.btnAdminCreateDept);
             this.Controls.Add(this.lblAdmin);
             this.Name = "Administrator_Portal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -149,7 +138,6 @@
         private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.Button btnAdminViewReport;
         private System.Windows.Forms.Button btnAdminCloseFile;
-        private System.Windows.Forms.Button btnAdminCreateDept;
         private System.Windows.Forms.Button btnAdminManageUserInfo;
         private System.Windows.Forms.Button btnAdminLogout;
     }

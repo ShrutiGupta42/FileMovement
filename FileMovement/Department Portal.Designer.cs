@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblDept = new System.Windows.Forms.Label();
-            this.btnDeptForwardFile = new System.Windows.Forms.Button();
             this.btnDeptUpdateFileStatus = new System.Windows.Forms.Button();
             this.btnDeptFileRegis = new System.Windows.Forms.Button();
             this.btnDeptLogout = new System.Windows.Forms.Button();
@@ -45,16 +44,6 @@
             this.lblDept.Size = new System.Drawing.Size(85, 31);
             this.lblDept.TabIndex = 0;
             this.lblDept.Text = "label1";
-            // 
-            // btnDeptForwardFile
-            // 
-            this.btnDeptForwardFile.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeptForwardFile.Location = new System.Drawing.Point(195, 282);
-            this.btnDeptForwardFile.Name = "btnDeptForwardFile";
-            this.btnDeptForwardFile.Size = new System.Drawing.Size(250, 33);
-            this.btnDeptForwardFile.TabIndex = 40;
-            this.btnDeptForwardFile.Text = "Forward File";
-            this.btnDeptForwardFile.UseVisualStyleBackColor = true;
             // 
             // btnDeptUpdateFileStatus
             // 
@@ -95,7 +84,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 395);
             this.Controls.Add(this.btnDeptLogout);
-            this.Controls.Add(this.btnDeptForwardFile);
             this.Controls.Add(this.btnDeptUpdateFileStatus);
             this.Controls.Add(this.btnDeptFileRegis);
             this.Controls.Add(this.lblDept);
@@ -111,7 +99,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblDept;
-        private System.Windows.Forms.Button btnDeptForwardFile;
         private System.Windows.Forms.Button btnDeptUpdateFileStatus;
         private System.Windows.Forms.Button btnDeptFileRegis;
         private System.Windows.Forms.Button btnDeptLogout;
