@@ -24,7 +24,7 @@ namespace FileMovement
         {
             string fileNumber = txtAdminRemoveFile.Text; 
 
-            DialogResult dialog = MessageBox.Show("Are you sure you want to remove this file?", "Remove File", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult dialog = MessageBox.Show("Are you sure you want to Close this file?", "Remove File", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             
             if(dialog == DialogResult.Yes)
             {
@@ -36,7 +36,7 @@ namespace FileMovement
 
                 if(row == 1)
                 {
-                    MessageBox.Show("The File is removed successfully!!");
+                    MessageBox.Show("The File is Closed successfully!!");
 
                     this.Hide();
                     Administrator_Portal portal = new Administrator_Portal();
